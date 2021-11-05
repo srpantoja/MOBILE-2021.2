@@ -17,15 +17,16 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.intromobile.adapters.ViewPageAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.android.material.textfield.TextInputEditText
 
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //atv1ToggleButton()
+        atv1ToggleButton()
         //atv2EditText()
-        //
+        //atv3Array()
         //atv4AutoComplete()
         //atv5Spinner()
         //atv6RadioButton()
@@ -36,8 +37,9 @@ class MainActivity : AppCompatActivity() {
         //atv11Background()
         //atv12MultipleActivity()
         //atv13TabFragments()
-        //atv14_15ListView_ArrayAdapter()
-        atv17Som()
+        //atv14ListView()
+        //atv15ArrayAdapter()
+        //atv17Som()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -97,6 +99,27 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+    }
+    private fun atv3Array(){
+        setContentView(R.layout.atv3)
+        val _arrayText : TextView
+        val _inputItem : EditText
+        val _buttonAdd : Button
+
+        _arrayText = findViewById(R.id.arrayList)
+        _inputItem = findViewById(R.id.Input_arrayList)
+        _buttonAdd = findViewById(R.id.add_item)
+
+        var array = ArrayList<String>()
+        _buttonAdd.setOnClickListener {
+            val builder = StringBuilder()
+            array.add(_inputItem.text.toString())
+            for (value in array){
+                builder.append(value).append(" ")
+            }
+            _arrayText.text = builder.toString()
+        }
+
     }
     private fun atv4AutoComplete(){
     setContentView(R.layout.atv4)
@@ -235,14 +258,20 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-    private fun atv3_14_15ListView_ArrayAdapter(){
+    private fun atv14ListView(){
+        setContentView(R.layout.atv14)
+        val _listView : ListView
+        _listView = findViewById(R.id.listView14)
+    }
+    private fun atv15ArrayAdapter(){
         var _listView: ListView
         val list = listOf( "Brasil", "Argentina", "Uruguai", "Colombia" )
-        setContentView(R.layout.atv3_14_15)
+        setContentView(R.layout.atv15)
         _listView = findViewById(R.id.listView)
         _listView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
 
     }
+
     private fun atv17Som(){
         setContentView(R.layout.atv17)
         val _sound : MediaPlayer
