@@ -1,0 +1,10 @@
+com/example/mobile_atv2/databinding/EditViewBinding.java
+ com.example.mobile_atv2.databinding.EditViewBinding
+com/example/mobile_atv2/databinding/AddViewBinding.java
+ com.example.mobile_atv2.databinding.AddViewBinding
+com/example/mobile_atv2/databinding/PlacesRowBinding.java
+ com.example.mobile_atv2.databinding.PlacesRowBinding
+com/example/mobile_atv2/BuildConfig.java
+ com.example.mobile_atv2.BuildConfig
+com/example/mobile_atv2/databinding/MainBinding.java
+ com.example.mobile_atv2.databinding.MainBinding

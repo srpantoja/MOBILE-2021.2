@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_view.xml",
+        "source": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\src\\main\\res\\layout\\add_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main.xml",
+        "source": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\edit_view.xml",
+        "source": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\src\\main\\res\\layout\\edit_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\places_row.xml",
+        "source": "C:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\src\\main\\res\\layout\\places_row.xml"
+    }
+]

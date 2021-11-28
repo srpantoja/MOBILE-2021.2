@@ -1,0 +1,4 @@
+#Sun Nov 28 17:19:01 BRT 2021
+base.0=C\:\\Users\\jeanpantoja\\AndroidStudioProjects\\mobile_atv2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
