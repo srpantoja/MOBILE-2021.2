@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490898926103",
+    "project_id": "mobile-atv2",
+    "storage_bucket": "mobile-atv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490898926103:android:b2c28d974bfca878f9ca52",
+        "android_client_info": {
+          "package_name": "com.example.mobile_atv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490898926103-28vsv0cqh1sr6k71nc9sgq8kn6025mun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0CkXzzLe9FthEHYAFT2OTd_mNoSl4udg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490898926103-28vsv0cqh1sr6k71nc9sgq8kn6025mun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
