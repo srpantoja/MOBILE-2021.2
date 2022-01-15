@@ -5,7 +5,7 @@ import java.io.Serializable
 
 @IgnoreExtraProperties
 data class PigFood(
-    var id: Int? = 0,
+    var id: String? = "",
     var name: String? = "",
     var price: String? = "",
     var description: String? = ""

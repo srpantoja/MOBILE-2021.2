@@ -31,6 +31,25 @@ class EditView : AppCompatActivity() {
         editprice.setText(pigFoodAux.price)
     }
 
+    fun deletePigFood(view: View){
+        val intent = Intent(this, Main::class.java)
+        database = FirebaseDatabase.getInstance().getReference("pigfood")
+
+        var pigFoodAux : PigFood = Main.pigFoodItem
+        var editname : EditText = findViewById(R.id.name)
+        var editdesc : EditText = findViewById(R.id.description)
+        var editprice : EditText = findViewById(R.id.price)
+        var name = editname.text.toString()
+        var desc = editdesc.text.toString()
+        var price = editprice.text.toString()
+
+        println("========= REMOVE TEST ===========")
+        //Main.pigFood[pigFoodAux.id!!] =
+        database.child(pigFoodAux.id.toString()).removeValue()
+        startActivity(intent)
+        finish()
+    }
+
     fun editPigFood(view: View){
         val intent = Intent(this, Main::class.java)
         database = FirebaseDatabase.getInstance().getReference("pigfood")
@@ -44,7 +63,7 @@ class EditView : AppCompatActivity() {
         var price = editprice.text.toString()
 
         //Main.pigFood[pigFoodAux.id!!] =
-        database.child(pigFoodAux.name.toString()).setValue(PigFood(pigFoodAux.id, name, price, desc))
+        database.child(pigFoodAux.id.toString()).setValue(PigFood(pigFoodAux.id, name, price, desc))
         startActivity(intent)
         finish()
 

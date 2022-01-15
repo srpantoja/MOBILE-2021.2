@@ -29,15 +29,16 @@ class AddView : AppCompatActivity() {
         var price = addPrice.text.toString()
 
         database = FirebaseDatabase.getInstance().getReference("pigfood")
-        val _food : PigFood = PigFood(Main.count, name, price, desc)
-        database.child(name).setValue(_food).addOnSuccessListener {
+        val newPigFood : DatabaseReference = database.push()
+        val idPigFood = newPigFood.key
+        val _food : PigFood = PigFood(idPigFood, name, price, desc)
+        database.child(idPigFood.toString()).setValue(_food).addOnSuccessListener {
             addName.text.clear()
             addDesc.text.clear()
             addPrice.text.clear()
             Toast.makeText(this,"success", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener{
             Toast.makeText(this,"error", Toast.LENGTH_SHORT).show()
-
         }
         Main.count++
         startActivity(intent)

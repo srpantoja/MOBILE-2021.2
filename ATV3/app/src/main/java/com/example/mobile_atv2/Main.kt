@@ -20,7 +20,7 @@ class Main : AppCompatActivity(), PlaceAdapter.ClickItem {
     companion object{
         val PIGFOOD = "PIGFOOD"
         var count = 1
-        var pigFoodItem = PigFood(1, "", "", "")
+        var pigFoodItem = PigFood("", "", "", "")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
